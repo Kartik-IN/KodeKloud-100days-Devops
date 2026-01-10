@@ -99,10 +99,9 @@ This helps strengthen interview confidence along with hands-on skills.
 
 ## 🌐 Connect With Me
 
-LinkedIn  : https://linkedin.com/in/YOUR_PROFILE  
-GitHub    : https://github.com/YOUR_USERNAME  
+LinkedIn  : [https://www.linkedin.com/in/kartik-kale/]
+GitHub    : [https://github.com/Kartik-IN]
 
-(Replace with your actual profile links)
 
 ------------------------------------------------------------
 
