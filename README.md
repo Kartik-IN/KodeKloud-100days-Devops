@@ -60,14 +60,6 @@ Each day contains:
 
 ------------------------------------------------------------
 
-## 📅 Progress Tracker
-
-Day 01  : Linux User Management & Non-Interactive Shells  ✅ Completed  
-Day 02  : Coming Soon...                                 ⏳  
-Day 03  : Coming Soon...                                 ⏳  
-
-------------------------------------------------------------
-
 ## 🧠 Learning Method
 
 I follow a simple learning cycle:
