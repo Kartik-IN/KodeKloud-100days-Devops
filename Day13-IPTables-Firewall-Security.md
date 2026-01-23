@@ -1,4 +1,4 @@
-# 🔥 Day 12 – Securing Apache Port Using iptables Firewall
+# 🔥 Day 13 – Securing Apache Port Using iptables Firewall
 
 ## 📌 Scenario
 The security team identified that Apache port **5000** was open to everyone on all app servers in the Stratos Datacenter.  
