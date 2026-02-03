@@ -1,0 +1,107 @@
+# 🍴 Day 23 – Fork a Git Repository (Gitea UI)
+
+## 📌 Scenario
+The Nautilus project teams use an internal **Git server (Gitea)** for source control.  
+A new developer named **Jon** joined the team and needed to start working on an existing project.
+
+To enable this, Jon was required to **fork an existing Git repository** using the **Gitea Web UI**.
+
+---
+
+## 🎯 Objectives
+- Access the internal Gitea UI
+- Authenticate using provided credentials
+- Locate the required repository
+- Fork the repository under the correct user account
+- Verify successful fork creation
+
+---
+
+## 🛠️ Task Details
+- **Git UI:** Gitea
+- **Username:** `jon`
+- **Password:** `jon_pass123`
+- **Repository to Fork:** `sarah/story-blog`
+- **Fork Owner:** `jon`
+
+> ⚠️ Note: This task required **Web UI interaction**, not CLI-based Git commands.
+
+---
+
+## 🧩 Solution Steps
+
+### ✅ 1. Access Gitea UI
+- Clicked the **Gitea UI** button from the top navigation bar
+- Redirected to the internal Git server login page
+
+---
+
+### ✅ 2. Login to Gitea
+- Username: `jon`
+- Password: `jon_pass123`
+
+✔️ Successfully authenticated
+
+---
+
+### ✅ 3. Locate Repository
+- Searched for repository:  
+sarah/story-blog
+
+- Opened the repository owned by user **sarah**
+
+---
+
+### ✅ 4. Fork the Repository
+- Clicked the **Fork** button
+- Selected **jon** as the destination owner
+
+✔️ Repository forked successfully under `jon/story-blog`
+
+---
+
+### ✅ 5. Verification
+- Confirmed fork existence under Jon’s account
+- Verified repository structure and files
+
+---
+
+## 🧠 Key Learnings
+- Forking allows independent development without affecting the original repository
+- Web UI Git operations are common in enterprise environments
+- Correct user context matters even in UI-based workflows
+- Forks are essential for collaboration and controlled code contributions
+
+---
+
+## ⚠️ Common Mistakes to Avoid
+- Forking under the wrong user
+- Modifying the original repository instead of forking
+- Skipping verification after fork
+- Assuming CLI access is always available
+
+---
+
+## 🎤 Interview Questions
+
+### Q1. What is the purpose of forking a repository?
+Forking allows developers to work independently while preserving the original codebase.
+
+---
+
+### Q2. How is forking different from cloning?
+Forking creates a new repository under a user account, while cloning only creates a local copy.
+
+---
+
+### Q3. Why do organizations prefer forks?
+They enable controlled collaboration, code reviews, and safe experimentation.
+
+---
+
+### Q4. Can forks be synchronized with upstream repositories?
+Yes, forks can pull updates from the original repository when needed.
+
+---
+
+✅ **Task Completed Successfully** 🎉
