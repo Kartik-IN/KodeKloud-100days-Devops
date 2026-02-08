@@ -1,0 +1,89 @@
+# 🔀 Day 26 – Git Remotes Update + Commit + Push (Production Repo Sync)
+
+## 📌 Scenario
+
+The xFusionCorp development team updated a project hosted at:
+
+/opt/demo.git
+
+
+This repository is cloned on the Storage Server at:
+
+/usr/src/kodekloudrepos/demo
+
+
+DevOps added a **new Git remote**, and the task was to:
+
+- Add that remote locally
+- Copy a file into the repo
+- Commit changes to master
+- Push master to the new remote
+
+---
+
+## 🎯 Objectives
+
+- Add new remote `dev_demo`
+- Point it to `/opt/xfusioncorp_demo.git`
+- Copy `/tmp/index.html` into repo
+- Commit to master
+- Push master branch to new remote
+
+---
+
+## 🛠️ Tasks Performed
+
+### ✅ 1. Navigate to Repository
+
+```bash
+cd /usr/src/kodekloudrepos/demo
+✅ 2. Add New Remote
+git remote add dev_demo /opt/xfusioncorp_demo.git
+Verify:
+
+git remote -v
+✅ 3. Copy File into Repo
+cp /tmp/index.html .
+✅ 4. Stage & Commit Changes
+git add index.html
+git commit -m "Added index.html file"
+✅ 5. Push Master to New Remote
+git push dev_demo master
+✅ Verification
+git log --oneline
+git remote -v
+✔ Commit visible
+✔ Remote added
+✔ Master pushed successfully
+
+🧠 Key Learnings
+Git allows multiple remotes per repository.
+
+Always verify remotes using git remote -v.
+
+File changes must be staged before commit.
+
+Pushing explicitly requires:
+
+git push <remote> <branch>
+Production Git tasks require precision — small mistakes can overwrite code.
+
+🎤 Interview Questions
+Q1. What is a Git remote?
+A remote is a reference to another Git repository location.
+
+Q2. Why use multiple remotes?
+To sync code across different servers or environments.
+
+Q3. Difference between origin and custom remotes?
+origin is default; custom remotes allow pushing to additional repos.
+
+Q4. What happens if you push without committing?
+Nothing — Git only pushes committed changes.
+
+Q5. How do you verify a successful push?
+Using:
+
+git log
+git remote -v
+✅ Day 26 Completed Successfully
