@@ -1,0 +1,74 @@
+# 🔄 Day 27 – Git Revert Recent Changes (Production Fix)
+
+## 📌 Scenario
+The Nautilus application development team reported an issue with recent commits pushed to the repository:
+
+`/usr/src/kodekloudrepos/games`
+
+The issue was introduced by the latest commit, and the DevOps team was asked to **safely revert the repository HEAD to the previous stable state** without rewriting Git history.
+
+---
+
+## 🎯 Objectives
+- Revert the latest commit in the repository
+- Preserve Git history (no reset)
+- Use a proper revert commit message
+- Ensure repository HEAD points to the last stable commit
+
+---
+
+## 🛠️ Tasks Performed
+
+### ✅ 1. Navigate to Repository
+```bash
+cd /usr/src/kodekloudrepos/games
+✅ 2. Verify Commit History
+git log --oneline
+Observed:
+
+Latest commit needed to be reverted
+
+Previous commit message: initial commit
+
+✅ 3. Revert Latest Commit
+git revert HEAD
+✅ 4. Set Revert Commit Message
+When prompted, used the required message:
+
+revert games
+(All lowercase as instructed)
+
+✅ Verification
+Confirm New Commit
+git log --oneline
+✔️ Result:
+
+A new revert commit created
+
+HEAD safely reverted to previous state
+
+Git history preserved
+
+🧠 Key Learnings
+git revert is safer than git reset in shared repositories
+
+Revert creates a new commit instead of deleting history
+
+Production fixes must always preserve audit trails
+
+Always check commit history before taking action
+
+🎤 Interview Questions
+Q1. Why use git revert instead of git reset?
+git revert preserves commit history, making it safe for shared and production repositories.
+
+Q2. What happens internally when you run git revert?
+Git creates a new commit that undoes the changes introduced by the specified commit.
+
+Q3. Can git revert be undone?
+Yes, by reverting the revert commit itself.
+
+Q4. When should git reset --hard be avoided?
+In shared repositories or production environments where history must be preserved.
+
+✅ Task Completed Successfully
